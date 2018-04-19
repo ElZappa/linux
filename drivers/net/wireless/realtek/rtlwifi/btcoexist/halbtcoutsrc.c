@@ -1309,9 +1309,6 @@ bool exhalbtc_bind_bt_coex_withadapter(void *adapter)
 	ant_num = rtl_get_hwpg_ant_num(rtlpriv);
 	exhalbtc_set_ant_num(rtlpriv, BT_COEX_ANT_TYPE_PG, ant_num);
 
-	/* set default antenna position to main  port */
-	btcoexist->board_info.btdm_ant_pos = BTC_ANTENNA_AT_MAIN_PORT;
-
 	single_ant_path = rtl_get_hwpg_single_ant_path(rtlpriv);
 	exhalbtc_set_single_ant_path(btcoexist, single_ant_path);
 
